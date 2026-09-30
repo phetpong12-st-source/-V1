@@ -1,54 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ศูนย์รวม Dashboard โรงพยาบาล">
-<title>ศูนย์รวม Dashboard โรงพยาบาล</title>
-<link rel="stylesheet" href="assets/style.css">
+<title>Dashboard Portal</title>
+<style>
+:root{--primary:#1769aa;--bg:#f4f7fb;--text:#183247;--muted:#6b7c8f}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(135deg,#0d5c8f,#1986b8);color:white;padding:34px 7%}
+header h1{margin:0 0 8px;font-size:30px}header p{margin:0;opacity:.9}
+main{max-width:1200px;margin:auto;padding:28px 20px 50px}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+input,select{padding:12px 14px;border:1px solid #d5dee8;border-radius:10px;background:white;font-size:15px}
+input{flex:1;min-width:240px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:white;border-radius:16px;padding:22px;box-shadow:0 5px 18px rgba(25,55,80,.08);border:1px solid #e8eef4;display:flex;flex-direction:column;min-height:205px}
+.icon{font-size:34px}.dept{font-size:13px;color:var(--primary);font-weight:700;margin-top:12px}.card h2{font-size:20px;margin:7px 0}.desc{color:var(--muted);font-size:14px;line-height:1.5;flex:1}
+.btn{display:inline-block;text-align:center;text-decoration:none;background:var(--primary);color:white;padding:11px 15px;border-radius:9px;font-weight:600}.btn:hover{opacity:.9}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:18px}
+.empty{padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}
+</style>
 </head>
 <body>
-<header class="topbar">
-  <div class="brand">
-    <div class="logo" aria-label="โลโก้โรงพยาบาล">🏥</div>
-    <div><strong id="hospitalName">โรงพยาบาลของคุณ</strong><span>ศูนย์รวม Dashboard และสารสนเทศ</span></div>
-  </div>
-  <button class="menuBtn" onclick="document.body.classList.toggle('nav-open')">☰</button>
+<header>
+  <h1>🏥 Dashboard หน่วยงาน</h1>
+  <p>ศูนย์รวม Dashboard และรายงานสารสนเทศของหน่วยงาน</p>
 </header>
-
-<div class="layout">
-<aside class="sidebar">
-  <div class="side-title">เมนูหน่วยงาน</div>
-  <nav id="deptMenu"></nav>
-</aside>
-
-<main class="content">
-  <section class="hero">
-    <div>
-      <p class="eyebrow">HOSPITAL DASHBOARD PORTAL</p>
-      <h1>ศูนย์รวม Dashboard โรงพยาบาล</h1>
-      <p>รวม Dashboard ของหน่วยงานไว้ในจุดเดียว ค้นหาและเข้าสู่ระบบได้อย่างรวดเร็ว</p>
-    </div>
-    <div class="hero-mark">📊</div>
-  </section>
-
-  <section class="stats">
-    <div class="stat"><span>Dashboard ทั้งหมด</span><b id="totalDash">0</b></div>
-    <div class="stat"><span>หน่วยงาน</span><b id="totalDept">0</b></div>
-    <div class="stat"><span>หมวดงาน</span><b id="totalCat">0</b></div>
-  </section>
-
-  <section class="toolbar">
-    <input id="search" type="search" placeholder="🔎 ค้นหาชื่อ Dashboard หรือหน่วยงาน..." oninput="render()">
+<main>
+  <div class="toolbar">
+    <input id="search" placeholder="🔍 ค้นหาหน่วยงานหรือ Dashboard..." oninput="render()">
     <select id="category" onchange="render()"><option value="">ทุกหมวดงาน</option></select>
-  </section>
-
-  <div id="grid" class="grid"></div>
+  </div>
+  <section id="grid" class="grid"></section>
 </main>
-</div>
-
-<footer>© 2026 <span id="footerName">โรงพยาบาลของคุณ</span> • Hospital Dashboard Portal</footer>
+<footer>Dashboard Portal Template • แก้ข้อมูลได้จากไฟล์ data.js</footer>
 <script src="data.js"></script>
-<script src="assets/app.js"></script>
+<script>
+function render(){
+ const q=document.getElementById('search').value.toLowerCase();
+ const c=document.getElementById('category').value;
+ const items=DASHBOARDS.filter(x=>(!c||x.category===c)&&
+   (!q||[x.department,x.title,x.description,x.category].join(' ').toLowerCase().includes(q)));
+ const grid=document.getElementById('grid');
+ grid.innerHTML=items.length?items.map(x=>`
+ <article class="card">
+   <div class="icon">${x.icon}</div>
+   <div class="dept">${x.department}</div>
+   <h2>${x.title}</h2>
+   <div class="desc">${x.description}</div>
+   <a class="btn" href="${x.url}" target="_blank" rel="noopener">เข้าสู่ Dashboard ↗</a>
+ </article>`).join(''):'<div class="empty">ไม่พบ Dashboard ที่ค้นหา</div>';
+}
+const cats=[...new Set(DASHBOARDS.map(x=>x.category))];
+cats.forEach(c=>document.getElementById('category').insertAdjacentHTML('beforeend',`<option>${c}</option>`));
+render();
+</script>
 </body>
 </html>
