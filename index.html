@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ศูนย์รวม Dashboard โรงพยาบาล">
+<title>ศูนย์รวม Dashboard โรงพยาบาล</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-label="โลโก้โรงพยาบาล">🏥</div>
+    <div><strong id="hospitalName">โรงพยาบาลของคุณ</strong><span>ศูนย์รวม Dashboard และสารสนเทศ</span></div>
+  </div>
+  <button class="menuBtn" onclick="document.body.classList.toggle('nav-open')">☰</button>
+</header>
+
+<div class="layout">
+<aside class="sidebar">
+  <div class="side-title">เมนูหน่วยงาน</div>
+  <nav id="deptMenu"></nav>
+</aside>
+
+<main class="content">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">HOSPITAL DASHBOARD PORTAL</p>
+      <h1>ศูนย์รวม Dashboard โรงพยาบาล</h1>
+      <p>รวม Dashboard ของหน่วยงานไว้ในจุดเดียว ค้นหาและเข้าสู่ระบบได้อย่างรวดเร็ว</p>
+    </div>
+    <div class="hero-mark">📊</div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><span>Dashboard ทั้งหมด</span><b id="totalDash">0</b></div>
+    <div class="stat"><span>หน่วยงาน</span><b id="totalDept">0</b></div>
+    <div class="stat"><span>หมวดงาน</span><b id="totalCat">0</b></div>
+  </section>
+
+  <section class="toolbar">
+    <input id="search" type="search" placeholder="🔎 ค้นหาชื่อ Dashboard หรือหน่วยงาน..." oninput="render()">
+    <select id="category" onchange="render()"><option value="">ทุกหมวดงาน</option></select>
+  </section>
+
+  <div id="grid" class="grid"></div>
+</main>
+</div>
+
+<footer>© 2026 <span id="footerName">โรงพยาบาลของคุณ</span> • Hospital Dashboard Portal</footer>
+<script src="data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
