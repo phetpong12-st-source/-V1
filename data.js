@@ -16,7 +16,7 @@ const DASHBOARDS = [
     category: "บริการ",
     description: "กำลังอนู่ในช่วงของการพัฒนา",
     icon: "🏥",
-    url: "https://example.com/dashboard-opd"
+    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
   },
   {
     department: "ศูนย์รับเรื่องร้องทุกข์",
@@ -24,7 +24,7 @@ const DASHBOARDS = [
     category: "คุณภาพ",
     description: "กำลังอยู่ในช่วงของการพัฒนา",
     icon: "📝",
-    url: "https://example.com/dashboard-complaints"
+    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
   },
   {
     department: "งานศูนย์คุณภาพ",
@@ -47,7 +47,7 @@ const DASHBOARDS = [
     title: "Dashboard CSSD EXECUTIVE",
     category: "งานจ่ายกลาง",
     description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
-    icon: "💰",
+    icon: "🚛",
     url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
   },
   {
@@ -56,7 +56,7 @@ const DASHBOARDS = [
     category: "กลุ่มงานบริหารงานทั่วไป",
     description: "กำลังอยู่ในช่วงพัฒนา",
     icon: "👨‍⚕️",
-    url: "https://example.com/dashboard"
+    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
   },
   {
     department: "งานบุคลากร",
@@ -64,6 +64,6 @@ const DASHBOARDS = [
     category: "งานบริหารจัดการทั่วไป",
     description: "อยู่ในช่วงของการพัฒนา",
     icon: "👬",
-    url: "https://drive.google.com/file/d/1pXnxhXTVvg2-xk8vCtyKXhR5qH_IhPYp/view?usp=sharing"
+    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
   }
 ];
