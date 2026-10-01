@@ -11,29 +11,13 @@ const DASHBOARDS = [
     url: "https://homeward.dms.go.th/?redirect=%2Fmember%2Fdashboard"
   },
   {
-    department: "งานผู้ป่วยนอก",
-    title: "Dashboard OPD",
-    category: "บริการ",
-    description: "กำลังอนู่ในช่วงของการพัฒนา",
-    icon: "🏥",
-    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
-  },
-  {
-    department: "ศูนย์รับเรื่องร้องทุกข์",
-    title: "Dashboard เรื่องร้องทุกข์",
-    category: "คุณภาพ",
-    description: "กำลังอยู่ในช่วงของการพัฒนา",
-    icon: "📝",
-    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
-  },
-  {
     department: "งานศูนย์คุณภาพ",
     title: "Dashboard ตัวชี้วัดองค์กร",
     category: "ยุทธศาสตร์",
     description: "ติดตามตัวชี้วัดและผลการดำเนินงานขององค์กร",
     icon: "📈",
     url: "https://docs.google.com/spreadsheets/d/1wyc_wKjcKn8hyShRpXnEAqPEX1X-ZdgdpyxOh4QiZm8/edit?pli=1&gid=1787171275#gid=1787171275"
-  },
+  }, 
   {
     department: "งานประกันสุขภาพยุทธศาสตร์",
     title: "Dashboard รายงานผลงานกองทุน / ยอดชดเชย",
@@ -49,6 +33,22 @@ const DASHBOARDS = [
     description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
     icon: "🚛",
     url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
+  },
+  {
+    department: "ศูนย์รับเรื่องร้องทุกข์",
+    title: "Dashboard เรื่องร้องทุกข์",
+    category: "คุณภาพ",
+    description: "กำลังอยู่ในช่วงของการพัฒนา",
+    icon: "📝",
+    url: "ปิดปรับปรุง.png"
+  },
+  {
+    department: "งานผู้ป่วยนอก",
+    title: "Dashboard OPD",
+    category: "บริการ",
+    description: "กำลังอนู่ในช่วงของการพัฒนา",
+    icon: "🏥",
+    url: "ปิดปรับปรุง.png"
   },
   {
     department: "งานการเงิน",
