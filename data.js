@@ -3,12 +3,12 @@
 // Google Sheets หรือ Dashboard ของหน่วยงานอื่นได้
 const DASHBOARDS = [
   {
-    department: "IV-1 ผลด้านการดูแลสุขภาพ",
-    title: "Dashboard  ผลลัพธ์การดูแลผู้ป่วยโดยรวม [IV-1, III] ** (การเสียชีวิต การส่งต่อ การกลับมารักษาหรือการนอน รพ.ซ้ำ) ที่สะท้อนคุณภาพการดูแลรักษา",
-    category: "ผลลัพธ์การดูแลผู้ป่วยโดยรวม [IV-1, III]",
-    description: "ผลลัพธ์การดูแลผู้ป่วยโดยรวม [IV-1, III]",
+    department: "งานผู้ป่วยใน",
+    title: "Dashboard A-MED Homeward +",
+    category: "ผลลัพธ์การดูแลผู้ป่วยในโดยรวม",
+    description: "แพลตฟอร์มดูแลรักษาผู้ป่วยในที่บ้าน ",
     icon: "🧑‍⚕️",
-    url: "https://docs.google.com/spreadsheets/d/1wyc_wKjcKn8hyShRpXnEAqPEX1X-ZdgdpyxOh4QiZm8/edit?gid=0#gid=0"
+    url: "https://homeward.dms.go.th/?redirect=%2Fmember%2Fdashboard"
   },
   {
     department: "งานผู้ป่วยนอก",
@@ -27,7 +27,7 @@ const DASHBOARDS = [
     url: "https://example.com/dashboard-complaints"
   },
   {
-    department: "งานยุทธศาสตร์",
+    department: "งานศูนย์คุณภาพ",
     title: "Dashboard ตัวชี้วัดองค์กร",
     category: "ยุทธศาสตร์",
     description: "ติดตามตัวชี้วัดและผลการดำเนินงานขององค์กร",
@@ -43,7 +43,7 @@ const DASHBOARDS = [
     url: "https://chaiyo-report.web.app/"
   },
   {
-    department: "กลุ่มงานงานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
+    department: "งานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
     title: "Dashboard CSSD EXECUTIVE",
     category: "งานจ่ายกลาง",
     description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
@@ -51,12 +51,12 @@ const DASHBOARDS = [
     url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
   },
   {
-    department: "กลุ่มงานงานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
-    title: "Dashboard CSSD EXECUTIVE",
-    category: "งานจ่ายกลาง",
-    description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
-    icon: "💰",
-    url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
+    department: "งานบริหารงานทั่วไป",
+    title: "Dashboard บริหาร",
+    category: "กลุ่มงานบริหารงานทั่วไป",
+    description: "กำลังอยู่ในช่วงพัฒนา",
+    icon: "👨‍⚕️",
+    url: "https://example.com/dashboard-opd"
   },
   {
     department: "กลุ่มงานงานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
