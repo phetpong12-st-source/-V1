@@ -14,7 +14,7 @@ const DASHBOARDS = [
     department: "งานผู้ป่วยนอก",
     title: "Dashboard OPD",
     category: "บริการ",
-    description: "ข้อมูลผู้รับบริการและตัวชี้วัดงานผู้ป่วยนอก",
+    description: "กำลังอนู่ในช่วงของการพัฒนา",
     icon: "🏥",
     url: "https://example.com/dashboard-opd"
   },
@@ -22,7 +22,7 @@ const DASHBOARDS = [
     department: "ศูนย์รับเรื่องร้องทุกข์",
     title: "Dashboard เรื่องร้องทุกข์",
     category: "คุณภาพ",
-    description: "ติดตามจำนวน สถานะ และผลการดำเนินงานเรื่องร้องทุกข์",
+    description: "กำลังอยู่ในช่วงของการพัฒนา",
     icon: "📝",
     url: "https://example.com/dashboard-complaints"
   },
@@ -35,7 +35,7 @@ const DASHBOARDS = [
     url: "https://docs.google.com/spreadsheets/d/1wyc_wKjcKn8hyShRpXnEAqPEX1X-ZdgdpyxOh4QiZm8/edit?pli=1&gid=1787171275#gid=1787171275"
   },
   {
-    department: "กลุ่มงานประกันสุขภาพยุทธศาสตร์",
+    department: "งานประกันสุขภาพยุทธศาสตร์",
     title: "Dashboard รายงานผลงานกองทุน / ยอดชดเชย",
     category: "งานประกัน",
     description: "ข้อมูลรายงานผลงานกองทุน / ยอดชดเชย",
@@ -51,19 +51,19 @@ const DASHBOARDS = [
     url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
   },
   {
-    department: "งานบริหารงานทั่วไป",
-    title: "Dashboard บริหาร",
+    department: "งานการเงิน",
+    title: "Dashboard บริหารจัดการงานการเงินและบัญชี",
     category: "กลุ่มงานบริหารงานทั่วไป",
     description: "กำลังอยู่ในช่วงพัฒนา",
     icon: "👨‍⚕️",
-    url: "https://example.com/dashboard-opd"
+    url: "https://example.com/dashboard"
   },
   {
-    department: "กลุ่มงานงานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
-    title: "Dashboard CSSD EXECUTIVE",
-    category: "งานจ่ายกลาง",
-    description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
-    icon: "💰",
-    url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
+    department: "งานบุคลากร",
+    title: "Dashboard จัดสรรบุคลาการในองค์กร",
+    category: "งานบริหารจัดการทั่วไป",
+    description: "อยู่ในช่วงของการพัฒนา",
+    icon: "👬",
+    url: "https://drive.google.com/file/d/1pXnxhXTVvg2-xk8vCtyKXhR5qH_IhPYp/view?usp=sharing"
   }
 ];
