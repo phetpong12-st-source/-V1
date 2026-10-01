@@ -56,7 +56,7 @@ const DASHBOARDS = [
     category: "กลุ่มงานบริหารงานทั่วไป",
     description: "กำลังอยู่ในช่วงพัฒนา",
     icon: "👨‍⚕️",
-    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
+    url: "ปิดปรับปรุง.png"
   },
   {
     department: "งานบุคลากร",
@@ -64,6 +64,6 @@ const DASHBOARDS = [
     category: "งานบริหารจัดการทั่วไป",
     description: "อยู่ในช่วงของการพัฒนา",
     icon: "👬",
-    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
+    url: "ปิดปรับปรุง.png"
   }
 ];
