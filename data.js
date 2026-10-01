@@ -49,5 +49,21 @@ const DASHBOARDS = [
     description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
     icon: "💰",
     url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
+  },
+  {
+    department: "กลุ่มงานงานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
+    title: "Dashboard CSSD EXECUTIVE",
+    category: "งานจ่ายกลาง",
+    description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
+    icon: "💰",
+    url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
+  },
+  {
+    department: "กลุ่มงานงานการพยาบาลป้องกันควบคุมการติดเชื้อและหน่วยจ่ายกลาง",
+    title: "Dashboard CSSD EXECUTIVE",
+    category: "งานจ่ายกลาง",
+    description: "ข้อมูลและตัวชี้วัดระบบบริหารจัดการและรายงานผลงานจ่ายกลาง",
+    icon: "💰",
+    url: "https://script.google.com/a/macros/rmutsb.ac.th/s/AKfycbwoqsMVyo6klD7iLkkJhG7hFjTMGE9h0K8zX9KkUSjcUuArxLxpUfA4KJ1woF1J5TK9iQ/exec"
   }
 ];
