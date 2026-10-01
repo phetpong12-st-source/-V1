@@ -16,7 +16,7 @@ const DASHBOARDS = [
     category: "บริการ",
     description: "กำลังอนู่ในช่วงของการพัฒนา",
     icon: "🏥",
-    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
+    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
   },
   {
     department: "ศูนย์รับเรื่องร้องทุกข์",
@@ -24,7 +24,7 @@ const DASHBOARDS = [
     category: "คุณภาพ",
     description: "กำลังอยู่ในช่วงของการพัฒนา",
     icon: "📝",
-    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
+    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
   },
   {
     department: "งานศูนย์คุณภาพ",
@@ -56,7 +56,7 @@ const DASHBOARDS = [
     category: "กลุ่มงานบริหารงานทั่วไป",
     description: "กำลังอยู่ในช่วงพัฒนา",
     icon: "👨‍⚕️",
-    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
+    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
   },
   {
     department: "งานบุคลากร",
@@ -64,6 +64,6 @@ const DASHBOARDS = [
     category: "งานบริหารจัดการทั่วไป",
     description: "อยู่ในช่วงของการพัฒนา",
     icon: "👬",
-    url: "https://photos.google.com/photo/AF1QipPPRN4NAcf0Ra_-ba3hBOdcyCZuMe1yu4gbWCIp"
+    url: "https://photos.app.goo.gl/g5onaCHbSGFVS3F77"
   }
 ];
